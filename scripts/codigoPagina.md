@@ -5,7 +5,7 @@ Informes diarios (Desde el 1 de enero de 1998)
 http://www.juntadeandalucia.es/medioambiente/site/portalweb/menuitem.7e1cf46ddf59bb227a9ebe205510e1ca/?vgnextoid=7e612e07c3dc4010VgnVCM1000000624e50aRCRD&vgnextchannel=948a445a0b5f4310VgnVCM2000000624e50aRCRD&lr=lang_es  
 
 
-'''
+```
  <div class="apartado"><SCRIPT LANGUAGE="JavaScript">
 
 var IE4, ObjetoFormularioDia, ObjetoFormularioMes;
@@ -171,5 +171,4 @@ function proceso_mes ()
          location.href = uerreele + directorio + nombre_fichero;
 }
 </SCRIPT>
-'''
-
+```
