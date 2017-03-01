@@ -6,9 +6,9 @@ lista, así como lo que podéis aportar y queréis aprender.
 
 Recordad inscribiros previamente [en MeetUp](https://www.meetup.com/es-ES/Granada-Geek/events/236840299/?comment_table_id=476456357&comment_table_name=event_comment)
 
-Nombre | Aporta | Quiere aprender
--------| ------ | --------------
-[JJ Merelo](http://github.com/JJ)|Perl, scraping | Big data, R
-Nombre y enlace | Qué puedes aportar | Qué quieres aprender
+Nombre | Twitter | Telegram | Aporta | Quiere aprender
+-------| ------  | ---------| -------| --------------
+[JJ Merelo](http://github.com/JJ)| `jjmerelo` | `jjmerelo`| Perl, scraping | Big data, R
+Nombre y enlace | Para etiquetarte en fotos y mencionarte | Para añadirte a un grupo Telegram de coordinación | Qué puedes aportar | Qué quieres aprender
 
 
