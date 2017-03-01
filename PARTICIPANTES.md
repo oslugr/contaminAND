@@ -9,7 +9,7 @@ Recordad inscribiros previamente [en MeetUp](https://www.meetup.com/es-ES/Granad
 Nombre | Twitter | Telegram | Aporta | Quiere aprender
 -------| ------  | ---------| -------| --------------
 [JJ Merelo](http://github.com/JJ)| `jjmerelo` | `jjmerelo`| Perl, scraping | Big data, R
-[Renatoltt](http://github.com/renatolrr)| `renatolrr` | `renatolrr`| Google fusion, Google sheets | Perl6, R
+[Renatolrr](http://github.com/renatolrr)| `renatolrr` | `renatolrr`| Google fusion, Google sheets | Perl6, R
 Nombre y enlace | Para etiquetarte en fotos y mencionarte | Para añadirte a un grupo Telegram de coordinación | Qué puedes aportar | Qué quieres aprender
 
 
