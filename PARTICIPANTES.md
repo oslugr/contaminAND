@@ -10,6 +10,7 @@ Nombre | Twitter | Telegram | Aporta | Quiere aprender
 -------| ------  | ---------| -------| --------------
 [JJ Merelo](http://github.com/JJ)| `jjmerelo` | `jjmerelo`| Perl, scraping | Big data, R
 [Renatolrr](http://github.com/renatolrr)| `renatolrr` | `renatolrr`| Google fusion, Google sheets | Perl6, R
+[Makova](http://github.com/makova)|`makova` | `makova`|Python, scripts, BashLinux | Scraping
 Nombre y enlace | Para etiquetarte en fotos y mencionarte | Para añadirte a un grupo Telegram de coordinación | Qué puedes aportar | Qué quieres aprender
 
 
