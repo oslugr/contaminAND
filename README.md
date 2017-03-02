@@ -81,3 +81,8 @@ Algunos proyectos parecidos que pueden servir de inspiración o de donde podemos
 * [Índice de datos abiertos en el mundo](http://index.okfn.org/dataset/emissions/).
 * [Datos abiertos de calidad del aire en `datos.gob.es`](http://datos.gob.es/es/catalogo?q=aire) y [datos de mortalidad por cáncer de tracto aéreo digestivo](http://datos.gob.es/es/catalogo/a16003011-mortalidad-por-cancer-del-tracto-aereo-digestivo-superior-en-hombres-en-euskadi-1996-20031), pero sólo en Euskadi. 
 * [Datos de ciudades europeas](http://www.airqualitynow.eu/comparing_home.php). Esta es la [situación de Granada](http://www.airqualitynow.eu/city_info/granada/page1.php).
+* [API de datos meteorológicos](https://opendata.aemet.es/centrodedescargas/inicio), para relacionar con los datos de contaminación. Interesante, por ejemplo, las horas de insolación que están relacionadas con el ozono. 
+* [Minuta de un pleno del ayuntamiento, con valores legales y demás](http://transparencia.granada.org/public/Documento.aspx?ID=2891) 
+* [Estimando de forma indirecta la contaminación](http://ieeexplore.ieee.org/ielx5/4906860/4912739/04912847.pdf?tp=&arnumber=4912847&isnumber=4912739) a través de mediciones de tráfico de gente y vehículos y una técnica denominada Land Use Regression.
+
+
