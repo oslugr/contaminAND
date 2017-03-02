@@ -73,11 +73,11 @@ agradeceríamos
 que
 [te inscribas en MeetUp](https://www.meetup.com/es-ES/Granada-Geek/events/236840299/).
 
-## Proyectos interesantes
+## Recursos adicionales. 
 
 Algunos proyectos parecidos que pueden servir de inspiración o de donde podemos extraer software para usarlo.
 
 * [Smart Citizen](https://smartcitizen.me/) es una placa basada en Arduino, configurable, que detecta niveles de CO2. 
 * [Índice de datos abiertos en el mundo](http://index.okfn.org/dataset/emissions/).
 * [Datos abiertos de calidad del aire en `datos.gob.es`](http://datos.gob.es/es/catalogo?q=aire) y [datos de mortalidad por cáncer de tracto aéreo digestivo](http://datos.gob.es/es/catalogo/a16003011-mortalidad-por-cancer-del-tracto-aereo-digestivo-superior-en-hombres-en-euskadi-1996-20031), pero sólo en Euskadi. 
-* [Datos de ciudades europeas](http://www.airqualitynow.eu/comparing_home.php) 
+* [Datos de ciudades europeas](http://www.airqualitynow.eu/comparing_home.php). Esta es la [situación de Granada](http://www.airqualitynow.eu/city_info/granada/page1.php).
