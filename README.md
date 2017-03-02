@@ -36,7 +36,36 @@ Los diferentes subproyectos que se incluyen en este son:
   mediciones in situ y comparándolas.
 * Creación de un modelo que extrapole las mediciones de los sensores
   al resto de la ciudad (o ciudades).
-  
+
+## Posibles ideas
+
+  A la vez, el foco del [Open Data Day](http://opendataday.org) es sobre
+contaminación. Cualquier otro proyecto relacionado con la misma tendrá
+cabida. Por ejemplo
+* Sensores *low-cost* de contaminación atmosférica usando cámaras de
+  tráfico o la cámara del móvil.
+* Observatorio de redes sociales sobre comentarios sobre contaminación
+  o palabras relacionadas con los efectos de la contaminación.
+
+## A quién buscamos
+
+Buscamos a gente que pueda
+* Idear sensores de bajo coste de contaminación basados en la luz, sensores de bajo coste, monitorización de sensores existentes, es decir, cacharreo.
+* Programar un servidor.
+* Escribir una historia basada en los datos obtenidos, relacionándolos con datos de salud.
+* Desplegar los servidores en infraestructura Azure en la nube.
+* Aplicar algoritmos de aprendizaje automático para predecir contaminación a corto y medio plazo.
+* Programar apps de móviles.
+* Crear juegos que usen los datos de contaminación para gamificar hábitos y evitarla.
+* Visualizar de forma original datos de contaminación.
+* Crear historias visuales basadas en los datos obtenidos.
+
+## Ciencia abierta
+
+A la vez, este Open Data Day tiene también un foco en la ciencia abierta. Durante el fin de semana se liberarán conjuntos de datos en [Figshare](http://figshare.com) o se usará el Open Science Framework para liberar código, datos e informes técnicos. Se usará RMarkdown o Knitr para crear informes técnicos; si hay quien lo conozca, Jupyter Notebooks también. 
+
+## Quiero participar
+
 Si quieres participar *in situ* o remotamente, añádete
 a [la lista de participantes](PARTICIPANTES.md). Adicionalmente, si
 vas a estar en la Corrala en algún momento del fin de semana, te
