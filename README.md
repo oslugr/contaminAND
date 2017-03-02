@@ -73,6 +73,13 @@ agradeceríamos
 que
 [te inscribas en MeetUp](https://www.meetup.com/es-ES/Granada-Geek/events/236840299/).
 
+## Datos
+
+Hemos subido datos difíciles de obtener de otra forma
+al [subdirectorio `datos`](datos/). Todos los datos tienen licencia
+libre y se menciona la forma de obtención en el commit
+correspondiente.
+
 ## Recursos adicionales. 
 
 Algunos proyectos parecidos que pueden servir de inspiración o de donde podemos extraer software para usarlo.
