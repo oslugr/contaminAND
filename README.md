@@ -37,3 +37,9 @@ Los diferentes subproyectos que se incluyen en este son:
 * Creación de un modelo que extrapole las mediciones de los sensores
   al resto de la ciudad (o ciudades).
   
+Si quieres participar *in situ* o remotamente, añádete
+a [la lista de participantes](PARTICIPANTES.md). Adicionalmente, si
+vas a estar en la Corrala en algún momento del fin de semana, te
+agradeceríamos
+que
+[te inscribas en MeetUp](https://www.meetup.com/es-ES/Granada-Geek/events/236840299/).
