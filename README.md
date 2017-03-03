@@ -100,10 +100,10 @@ Algunos proyectos parecidos que pueden servir de inspiración o de donde podemos
   
 * [OpenAir, software para análisis de la calidad del aire](http://www.openair-project.org/Downloads/Default.aspx) 
 
-  * [Estación de medida de calidad del aire](https://github.com/javacasm/Sensor-calidad-del-aire---Leptos) usando
+* [Estación de medida de calidad del aire](https://github.com/javacasm/Sensor-calidad-del-aire---Leptos) usando
   Arduino y poco más. Especialmente interesante el sensor MQ2, que
   detecta al menos CO. 
   
- *  [Web de la Junta de Andalucia, control de calidad en la provincia de Granada](http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/feb17/gr170228.htm)
+*  [Web de la Junta de Andalucia, control de calidad en la provincia de Granada](http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/feb17/gr170228.htm)
 
 
