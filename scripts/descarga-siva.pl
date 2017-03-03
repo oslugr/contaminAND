@@ -51,9 +51,9 @@ while ( @tables ) {
 		 medidas => \@medidas };
 }
 
-my ($mesyear,$sitio,$dia) = ($url =~ m{/(\w+)/n(\w{2}\d{4}(\d{2}))\.htm});
+my ($mesyear,$sitio,$dia) = ($url =~ m{/(\w+)/n(\w{2})\d{4}(\d{2})\.htm});
 
-write_file( 'contaminAND-$sitio-$mesyear-$dia.JSON', encode_json \@datos );
+write_file( "contaminAND-$sitio-$mesyear-$dia.json", encode_json \@datos );
 
 
 			     
