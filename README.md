@@ -18,7 +18,7 @@ que extraer periódicamente los resultados de esa página y publicarlos;
 ese será el foco principal de este subproyecto coordinado desde la OSL
 por [JJ](http://github.com/JJ). 
 
-Los diferentes subproyectos que se incluyen en este son:
+Los diferentes subproyectos pueden ser alguno de los siguientes, pero no tienen por qué limitarse a estos:
 * Extracción de datos de la página arriba indicada y almacenamiento de
   los mismos para su fácil disponiblidad, en Google Fusion Tables,
   Google SpreadSheet, o cualquier otro lugar donde estén
@@ -36,6 +36,7 @@ Los diferentes subproyectos que se incluyen en este son:
   mediciones in situ y comparándolas.
 * Creación de un modelo que extrapole las mediciones de los sensores
   al resto de la ciudad (o ciudades).
+* Chatbot que te dé mediciones de contaminantes bajo demanda usando los datos o el API. 
 
 ## Posibles ideas
 
