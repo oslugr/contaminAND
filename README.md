@@ -106,4 +106,4 @@ Algunos proyectos parecidos que pueden servir de inspiración o de donde podemos
   
 *  [Web de la Junta de Andalucia, control de calidad en la provincia de Granada](http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/feb17/gr170228.htm)
 
-
+* [Mapas a tiempo real, calidad del aire](http://aqicn.org/map/spain/es/)
