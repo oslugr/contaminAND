@@ -98,5 +98,8 @@ Algunos proyectos parecidos que pueden servir de inspiración o de donde podemos
   a nivel europeo, y generación de datos descargables.
   
 * [OpenAir, software para análisis de la calidad del aire](http://www.openair-project.org/Downloads/Default.aspx) 
-
+*
+  [Estación de medida de calidad del aire](https://github.com/javacasm/Sensor-calidad-del-aire---Leptos) usando
+  Arduino y poco más. Especialmente interesante el sensor MQ2, que
+  detecta al menos CO. 
 
