@@ -1,4 +1,4 @@
-requires "Mojo::DOM";
+requires "Mojolicious", "7.13";
 requires "LWP::Simple";
 requires "File::Slurp::Tiny";
 requires "JSON";
