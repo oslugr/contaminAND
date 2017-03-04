@@ -18,6 +18,14 @@
 
 
 import os, re, sys, tweepy,ConfigParser
+from wordcloud import WordCloud, STOPWORDS
+import matplotlib.pyplot as plt
+import numpy as np
+from PIL import Image
+from os import path  
+from stop_words import get_stop_words
+from images2gif import writeGif
+
 
 def open_config():
     """Busca y abre un archivo INI para extraer las contraseñas y la configuración
@@ -81,29 +89,90 @@ def llamoTweeter():
         sys.exit()
 def buscoTweets(api):
     '''busco los tweets que contengan la palabra contaminacion'''
-    textos=[];
-    latitud_gra="37.178056";
-    longitud_gra="-3.600833";
+    textos={'total':[]};
+    latitud_gra="37.25";#centro de la provincia
+    longitud_gra="-3.25";#centro de la provincia
     radio_gra="100km";
-    query_gra="contaminacion";
+    query_gra="(clima OR contaminacion OR polucion OR humo OR atasco OR niebla OR respiración OR asma  OR suciedad OR sucio )  -politico -politica -filter:retweets";
     maxTweets = 1000000;
     granada=latitud_gra+","+longitud_gra+","+radio_gra;
     #nos quedamos con los que no sean rt
     for tweets in tweepy.Cursor(api.search, q=query_gra, lang='es',locale='es',geocode=granada,count=maxTweets, include_entities=True).pages():
         for tp in tweets:
-            if (tp.retweeted):
-                textos.append(tp.text.encode('utf-8'))
-            
+            #print(tp.text.encode('utf-8').lower())
             #print(tp.retweeted);
             #print(tp.geo);
             #print(tp.created_at);
+            dia=str(tp.created_at.date());
+            textito=tp.text.lower();
+            if (dia in textos.keys()):
+                textos[dia].append(textito);
+            else:
+                textos[dia]=[textito];
+            textos['total'].append(textito);
+            
             #print(tp.place);
         
     return textos;
+def nubePalabras(textos,fecha,name_file_ou="contaminacloud_"):
+    '''nube de palabras '''
+    text_textos=" ".join(textos);
+    #filtramos palabras y dejamos las mayores de 4 caracteres
+    text_filtrar_list=text_textos.split(" ");
+    text_filtradas=[p for p in text_filtrar_list if len(p)>3];
+    text=" ".join(text_filtradas);
+    d = path.dirname(__file__)
+    plt.axis("off")
+
+    # lower max_font_size
+    #wordcloud = WordCloud(max_font_size=40).generate(text)
+    #plt.figure()
+    #plt.imshow(wordcloud)
+    #plt.axis("off")
+    #plt.show()
+    granada_mask = np.array(Image.open(path.join(d, "provincia-de-granada.png")))
+    stopwords = set(get_stop_words('spanish'))
+    stopwords.add("https")
+    stopwords.add("co")
+    wc = WordCloud(background_color="white", max_words=200, mask=granada_mask,
+               stopwords=stopwords)
+    # generate word cloud
+    wc.generate(text)
+    #print(wc.words_)
+
+    # store to file
+    name_file_output=name_file_ou+fecha+".png";
+    plt.title(fecha);
+    #wc.to_file(path.join(d, name_file_output))
     
+    # show
+    plt.title(fecha)
+    
+    plt.imshow(wc)
+    plt.savefig(path.join(d, name_file_output))
+    plt.axis("off")
+    
+    plt.figure()
+    #plt.imshow(granada_mask, cmap=plt.cm.gray)
+    plt.axis("off")
+    #plt.show()
+def creaGif(fechas,name_file_ou="contaminacloud_"):
+    '''creamos gif'''
+    
+    file_names = [os.path.join(os.path.abspath(os.path.dirname(__file__)),name_file_ou+f+".png") for f in fechas if fechas!='total'];
+    command='convert -delay 500 -loop 0 %s %s' % (' '.join(file_names),name_file_ou+"all.gif");
+    os.system(command )
 def main():
     api=llamoTweeter();
-    buscoTweets(api);
-
+    textos=buscoTweets(api);
+    print ("número tweets",len(textos))
+    fechas=textos.keys();
+    fechas=sorted(fechas);
+    for k in fechas:
+        nubePalabras(textos[k],k);
+        print ("fecha procesada",k)
+    
+    creaGif(fechas)
+    
 if __name__ == "__main__":
     main()
