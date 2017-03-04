@@ -19,7 +19,6 @@ if    ( !$content )  {
 }
 
 my $dom = Mojo::DOM->new( $content );
-
 my @tables = $dom->find('table')->each;
 
 shift @tables; #Primera tabla con leyenda
@@ -47,6 +46,7 @@ while ( @tables ) {
     }
     push @medidas, $these_medidas;
   }
+  pop(@medidas);
   push @datos, { meta => $this_metadata,
 		 medidas => \@medidas };
 }
