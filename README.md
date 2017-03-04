@@ -1,5 +1,7 @@
 # contaminAND
 
+![Granada Radioactiva](recursos/granada-radioactiva.png)
+
 Repositorio para análisis y publicación de datos de contaminación en
 Andalucía. El
 [resto de los proyectos están en la web del evento](http://odd-grx-17.github.io) En
