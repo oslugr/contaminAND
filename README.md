@@ -1,6 +1,6 @@
 # contaminAND
 
-![Granada Radioactiva](recursos/granada-radioactiva.png)
+![Granada Radioactiva](recursos/granada-radioactiva_reducido.png)
 
 Repositorio para análisis y publicación de datos de contaminación en
 Andalucía. El
