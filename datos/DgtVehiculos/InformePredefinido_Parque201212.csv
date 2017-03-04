@@ -1,0 +1,63 @@
+Parque distribuido por tipo de vehículo, carburante y provincia.
+Comunidad Autónoma/Provincia residencia: Andalucía/Granada
+Tipo de Vehículo: AUTOBUSES, CAMIONES HASTA 3500kg, CAMIONES MÁS DE 3500kg, CICLOMOTORES, CUATRICICLOS LIGEROS, FURGONETAS, MOTOCICLETAS, OTROS VEHÍCULOS, REMOLQUES, SEMIRREMOLQUES, TRACTORES INDUSTRIALES, TURISMOS
+Carburante: Etanol, Otros, Gasolina, Gas Licuado de Petroleo, Gas Natural Licuado, Gasolina, Gas Natural Comprimido, Diesel, Biodiesel, Eléctrico, Diesel, Biometano, Hidrógeno, Diesel, Diesel
+
+Comunidad Autónoma/Provincia residencia;Tipo de Vehículo;Carburante;Total
+TOTAL;TOTAL;TOTAL;721338
+TOTAL;AUTOBUSES;TOTAL;1126
+TOTAL;CAMIONES HASTA 3500kg;TOTAL;44775
+TOTAL;CAMIONES MÁS DE 3500kg;TOTAL;6965
+TOTAL;CICLOMOTORES;TOTAL;80314
+TOTAL;FURGONETAS;TOTAL;59599
+TOTAL;MOTOCICLETAS;TOTAL;81175
+TOTAL;OTROS VEHÍCULOS;TOTAL;8913
+TOTAL;REMOLQUES;TOTAL;2294
+TOTAL;SEMIRREMOLQUES;TOTAL;3922
+TOTAL;TRACTORES INDUSTRIALES;TOTAL;3291
+TOTAL;TURISMOS;TOTAL;428964
+Andalucía/Granada;AUTOBUSES;TOTAL;1126
+Andalucía/Granada;AUTOBUSES;Diesel;1106
+Andalucía/Granada;AUTOBUSES;Gasolina;20
+Andalucía/Granada;CAMIONES HASTA 3500kg;TOTAL;44775
+Andalucía/Granada;CAMIONES HASTA 3500kg;Diesel;43960
+Andalucía/Granada;CAMIONES HASTA 3500kg;Eléctrico;2
+Andalucía/Granada;CAMIONES HASTA 3500kg;Gasolina;813
+Andalucía/Granada;CAMIONES MÁS DE 3500kg;TOTAL;6965
+Andalucía/Granada;CAMIONES MÁS DE 3500kg;Diesel;6888
+Andalucía/Granada;CAMIONES MÁS DE 3500kg;Gasolina;77
+Andalucía/Granada;CICLOMOTORES;TOTAL;80314
+Andalucía/Granada;CICLOMOTORES;Diesel;1058
+Andalucía/Granada;CICLOMOTORES;Eléctrico;19
+Andalucía/Granada;CICLOMOTORES;Gasolina;79237
+Andalucía/Granada;FURGONETAS;TOTAL;59599
+Andalucía/Granada;FURGONETAS;Diesel;49224
+Andalucía/Granada;FURGONETAS;Gasolina;10371
+Andalucía/Granada;FURGONETAS;Otros;3
+Andalucía/Granada;FURGONETAS;Solar;1
+Andalucía/Granada;MOTOCICLETAS;TOTAL;81175
+Andalucía/Granada;MOTOCICLETAS;Diesel;47
+Andalucía/Granada;MOTOCICLETAS;Eléctrico;69
+Andalucía/Granada;MOTOCICLETAS;Gasolina;81055
+Andalucía/Granada;MOTOCICLETAS;Otros;4
+Andalucía/Granada;OTROS VEHÍCULOS;TOTAL;8913
+Andalucía/Granada;OTROS VEHÍCULOS;Diesel;6705
+Andalucía/Granada;OTROS VEHÍCULOS;Eléctrico;23
+Andalucía/Granada;OTROS VEHÍCULOS;Gasolina;1967
+Andalucía/Granada;OTROS VEHÍCULOS;Otros;9
+Andalucía/Granada;OTROS VEHÍCULOS;Sin especificar;209
+Andalucía/Granada;REMOLQUES;TOTAL;2294
+Andalucía/Granada;REMOLQUES;Sin especificar;2294
+Andalucía/Granada;SEMIRREMOLQUES;TOTAL;3922
+Andalucía/Granada;SEMIRREMOLQUES;Sin especificar;3922
+Andalucía/Granada;TRACTORES INDUSTRIALES;TOTAL;3291
+Andalucía/Granada;TRACTORES INDUSTRIALES;Diesel;3265
+Andalucía/Granada;TRACTORES INDUSTRIALES;Gasolina;26
+Andalucía/Granada;TURISMOS;TOTAL;428964
+Andalucía/Granada;TURISMOS;Butano;3
+Andalucía/Granada;TURISMOS;Diesel;246568
+Andalucía/Granada;TURISMOS;Eléctrico;5
+Andalucía/Granada;TURISMOS;Gas Licuado de Petroleo;2
+Andalucía/Granada;TURISMOS;Gasolina;182361
+Andalucía/Granada;TURISMOS;Otros;22
+Andalucía/Granada;TURISMOS;Solar;3

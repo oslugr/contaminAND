@@ -9,7 +9,7 @@ use LWP::Simple;
 use File::Slurp::Tiny qw(write_file);
 use JSON;
 
-my $url = shift || 'http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/feb17/ngr170201.htm';
+my $url = shift || 'http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/mar17/ngr170303.htm';
 
 
 my $content = get( $url );
@@ -19,7 +19,6 @@ if    ( !$content )  {
 }
 
 my $dom = Mojo::DOM->new( $content );
-
 my @tables = $dom->find('table')->each;
 
 shift @tables; #Primera tabla con leyenda
@@ -39,16 +38,15 @@ while ( @tables ) {
 
   shift @filas; #Cabecera
   my @medidas;
+  pop @filas;
   for my $f (@filas) {
     my @columnas = $f->find('td')->map('text')->each;
-    my $these_medidas;
+    my %these_medidas = %$this_metadata;
     for my $c (qw(hora SO2 PART NO2 CO O3)) {
-      $these_medidas->{$c} = shift @columnas;
+      $these_medidas{$c} = shift @columnas;
     }
-    push @medidas, $these_medidas;
+    push @datos, \%these_medidas;
   }
-  push @datos, { meta => $this_metadata,
-		 medidas => \@medidas };
 }
 
 my ($mesyear,$sitio,$dia) = ($url =~ m{/(\w+)/n(\w{2})\d{4}(\d{2})\.htm});
