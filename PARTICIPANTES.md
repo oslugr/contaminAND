@@ -17,6 +17,7 @@ Nombre | Twitter | Telegram | Aporta | Quiere aprender
 [Fran](http://github.com/fnavales) | `NavalesF` | `fnavales`| Python, R, Django, ML | Big Data, Data Visualization
 [Alex](https://github.com/PhoenixAlx) | `Phoenix_Alx` | `Phoenix_alx`| Python, R, HTML, javascript,estadística bayesiana | Big Data, Data Visualization, Ciencia abierta
 [Rubén](http://github.com/rubenCastro)| | `rubenCastroZ`|Python | R, Big data, Scraping
+[AnaValdi](http://github.com/anavaldi)| | `ana_valdi`|Machine Learning, Data Visualization, R | Cloud Computing, Python
 Nombre y enlace | Para etiquetarte en fotos y mencionarte | Para añadirte a un grupo Telegram de coordinación | Qué puedes aportar | Qué quieres aprender
 
 
