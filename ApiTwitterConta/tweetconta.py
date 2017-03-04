@@ -22,7 +22,7 @@ import os, re, sys, getopt, tweepy, ConfigParser, codecs, locale
 
 def main(argv):
 
-    cuenta_de_la_dgt = "informaciondgt"
+    cuenta_de_AEMET_esp = "informacionclima"
 
     # http://stackoverflow.com/questions/4545661/unicodedecodeerror-when-redirecting-to-file
     sys.stdout = codecs.getwriter(locale.getpreferredencoding())(sys.stdout) 
@@ -32,7 +32,7 @@ def main(argv):
     imagen = ""
     reply = ""
 
-    show_user(config,cuenta_de_la_dgt,0)
+    show_user(config,cuenta_aemet_esp,0)
     sys.exit()
 
 def open_config():
@@ -106,14 +106,14 @@ def show_user(config,user,view_details_user=0):
 
     s = api.get_user(user)
 
-    traffic_regexp = u'\#([a-zA-ZÁÉÍÓÚáéíóúÇç]*)\s\w*\s?(\w+)[\s\w\/ÁÉÍÓÚáéíóúÇç]+\#(\w+)\s\(pk\s([\d\.]*)\s?\w*\s?([\d\.]*)\s?([\w\s\.]+)\)\s?([\s\w\/\-\.ÁÉÍÓÚáéíóúÇç]*)\s\#DGT(\w+)[\s\#\w]+(http://[\w\W]+)'
+    clima_regexp = u'\#([a-zA-ZÁÉĆÍÓÚáéíóúńÇç]*)\s\w*\s?(\w+)[\s\w\/ÁÉÍĆÓÚáéíóúńÇç]+\#(\w+)\s\(pk\s([\d\.]*)\s?\w*\s?([\d\.]*)\s?([\w\s\.]+)\)\s?([\s\w\/\-\.ÁÉÍĆÓÚáéíóúńÇç]*)\s\#AEMET_Esp(\w+)[\s\#\w]+(http://[\w\W]+)'
 
-    print u'"Estado","Nivel","Vía","Kilómetro Inicial","Kilómetro Final","Sentido","Provincia","Población","URL"'
+    print u'"Contaminacion","Provincia","Población","Tiempo", "Medición", "Clima"'
 
     if unicode(s.protected) != "True" or unicode(s.following) == "True":
         for s in tweepy.Cursor(api.user_timeline, id= user).items(config.getint("Preferences", "tweets_per_page")):
 
-            resultado = re.search(traffic_regexp,s.text)
+            resultado = re.search(clima_regexp,s.text)
 
             if resultado:
 
