@@ -90,3 +90,6 @@ ENV/
 
 # Backup
 *~
+
+# Big files
+script/contaminAND-gr.json

@@ -57,6 +57,7 @@ while ( $current < $stop ) {
     
     while ( @tables ) {
       my $metadatos = shift @tables;
+      next if !@tables;
       my $medidas = shift @tables;
       
       my @metadatos = ( $metadatos =~ /<b>.([A-Z][^<]+)/g);
