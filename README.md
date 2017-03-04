@@ -16,7 +16,8 @@ que depositan los resultados en
 [esta página](http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/feb17/ngr170201.htm). Hay
 que extraer periódicamente los resultados de esa página y publicarlos;
 ese será el foco principal de este subproyecto coordinado desde la OSL
-por [JJ](http://github.com/JJ). 
+por [JJ](http://github.com/JJ), [Renato](http://github.com/renatolrr)
+y [Manu](http://github.com/makova65).
 
 Los diferentes subproyectos pueden ser alguno de los siguientes, pero no tienen por qué limitarse a estos:
 * Extracción de datos de la página arriba indicada y almacenamiento de
