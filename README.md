@@ -2,6 +2,14 @@
 
 ![Granada Radioactiva](recursos/granada-radioactiva.png)
 
+## Resultados
+
+Ve directamente a la [página de resultados](resultados.md) si quieres
+ver lo que va saliendo. Pon un *watch* en este repo si quieres que te
+avise de nuevos resultados publicados. 
+
+## Explicación
+
 Repositorio para análisis y publicación de datos de contaminación en
 Andalucía. El
 [resto de los proyectos están en la web del evento](http://odd-grx-17.github.io) En
