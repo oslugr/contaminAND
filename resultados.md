@@ -16,6 +16,10 @@ Normativa
   
 [Normativa europea sobre emisiones](https://es.wikipedia.org/wiki/Normativa_europea_sobre_emisiones)  
 
-Consumo energía final  
+Consumos  
   
-<iframe width="500" height="300" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col8%2C+col6+from+1aAd0hqZ_G0o7Wy15Jot-Errlo7O4WnJLu36Wpx2E+order+by+col0+asc&amp;viz=GVIZ&amp;t=AREA&amp;rmax=250&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=500&amp;height=300"></iframe>
+[Consumo energía fina](https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&q=select+col0%2C+col8%2C+col6+from+1aAd0hqZ_G0o7Wy15Jot-Errlo7O4WnJLu36Wpx2E+order+by+col0+asc&viz=GVIZ&t=AREA&rmax=250&uiversion=2&gco_forceIFrame=true&gco_hasLabelsColumn=true&width=500&height=300)  
+  
+[Parque movil](https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&q=select+col0%2C+col1%2C+col2+from+1_cxeeLyOKDwIAEToLtRzlguqn6Suf9O8DoCrogo8+order+by+col0+asc&viz=GVIZ&t=AREA&rmax=250&uiversion=2&gco_forceIFrame=true&gco_hasLabelsColumn=true&width=500&height=300)
+  
+
