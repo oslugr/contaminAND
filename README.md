@@ -43,11 +43,16 @@ un Arduino](https://twitter.com/tempChanaGR).
 
 [Víctor Gea](http://github.com/VictorGeaGarcia) ha creado con pandas y
 bokeh
-[una visualización de la contaminació en la estación del Palacio de Congresos en febrero](Contaminacion_Congresos_febrero.html),
+[una visualización de la contaminación en la estación del Palacio de Congresos en febrero](Contaminacion_Congresos_febrero.html),
 estación cuya foto aparece aquí:
 
 ![Estación de calidad del aire](recursos/estacion.jpg)
 
+## Módulo en Perl para *scraping*
+
+[Web::SIVA](http://search.cpan.org/~jmerelo/Web-SIVA-0.0.4/) es un
+módulo en Perl para extraer datos de la web en el formato web que se
+usa a partir de 2004. 
 
 
 
