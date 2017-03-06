@@ -1,109 +1,59 @@
-# contaminAND
+# Open Data Day Hackathón - Granada 2017
 
-Repositorio para análisis y publicación de datos de contaminación en
-Andalucía. El
-[resto de los proyectos están en la web del evento](http://odd-grx-17.github.io) En
-este nos concentramos en la contaminación atmosférica, especialmente
-de NO y NO2.
+![Granada Radioactiva](recursos/granada-radioactiva_reducido.png)
 
+Este fue el [planteamiento inicial](planteamiento.md), con una serie
+de proyectos. A continuación los resultados.
 
-El **objetivo**
-de este proyecto es crear un API que permita leer desde *apps* o
-cualquier programa las lecturas de la calidad del aire de las
-diferentes ciudades andaluzas con medidores. En Granada
-[exiten una serie de medidores](http://www.granada.org/inet/wambiente.nsf/b1b426e5d69467c3c125763b0031d0c4/9d664bddf7e64554c125764e003875c0!OpenDocument)
-que depositan los resultados en
-[esta página](http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/feb17/ngr170201.htm). Hay
-que extraer periódicamente los resultados de esa página y publicarlos;
-ese será el foco principal de este subproyecto coordinado desde la OSL
-por [JJ](http://github.com/JJ). 
+## Proyecto en Figshare
 
-Los diferentes subproyectos pueden ser alguno de los siguientes, pero no tienen por qué limitarse a estos:
-* Extracción de datos de la página arriba indicada y almacenamiento de
-  los mismos para su fácil disponiblidad, en Google Fusion Tables,
-  Google SpreadSheet, o cualquier otro lugar donde estén
-  disponibles. También en alguna base de datos.
-* Creación de un middleware que publique los datos en un interfaz REST
-  fácilmente disponible y sin limitación de peticiones.
-* Creación de un *app* que avise sobre niveles de contaminación.
-* Narración de la historia de la contaminación en una zona
-  determinada.
-* Correlación de los datos de contaminación con otros: enfermedades,
-  meteorógicos, circulación si existen.
-* Publicación de un informe sobre contaminación en una ciudad
-  determinada.
-* Calibración de los sensores existentes en Granada haciendo
-  mediciones in situ y comparándolas.
-* Creación de un modelo que extrapole las mediciones de los sensores
-  al resto de la ciudad (o ciudades).
-* Chatbot que te dé mediciones de contaminantes bajo demanda usando los datos o el API. 
+Un
+[proyecto en Figshare](https://figshare.com/account/home#/projects/19567) reúne
+diferentes conjuntos de datos extraídos. 
 
-## Posibles ideas
+## Contaminación en las redes sociales
 
-  A la vez, el foco del [Open Data Day](http://opendataday.org) es sobre
-contaminación. Cualquier otro proyecto relacionado con la misma tendrá
-cabida. Por ejemplo
-* Sensores *low-cost* de contaminación atmosférica usando cámaras de
-  tráfico o la cámara del móvil.
-* Observatorio de redes sociales sobre comentarios sobre contaminación
-  o palabras relacionadas con los efectos de la contaminación.
+En en [subdirectorio `contacloud`](contacloud/) está el script para
+analizar las redes sociales y crear una nube de palabras relacionadas
+con la contaminación. Este es el resultado de diferentes días:
 
-## A quién buscamos
+![Granada contaminada](contacloud/contaminacloud_all.gif)
 
-Buscamos a gente que pueda
-* Idear sensores de bajo coste de contaminación basados en la luz, sensores de bajo coste, monitorización de sensores existentes, es decir, cacharreo.
-* Programar un servidor.
-* Escribir una historia basada en los datos obtenidos, relacionándolos con datos de salud.
-* Desplegar los servidores en infraestructura Azure en la nube.
-* Aplicar algoritmos de aprendizaje automático para predecir contaminación a corto y medio plazo.
-* Programar apps de móviles.
-* Crear juegos que usen los datos de contaminación para gamificar hábitos y evitarla.
-* Visualizar de forma original datos de contaminación.
-* Crear historias visuales basadas en los datos obtenidos.
-
-## Ciencia abierta
-
-A la vez, este Open Data Day tiene también un foco en la ciencia abierta. Durante el fin de semana se liberarán conjuntos de datos en [Figshare](http://figshare.com) o se usará el Open Science Framework para liberar código, datos e informes técnicos. Se usará RMarkdown o Knitr para crear informes técnicos; si hay quien lo conozca, Jupyter Notebooks también. 
-
-## Quiero participar
-
-Si quieres participar *in situ* o remotamente, añádete
-a [la lista de participantes](PARTICIPANTES.md). Adicionalmente, si
-vas a estar en la Corrala en algún momento del fin de semana, te
-agradeceríamos
-que
-[te inscribas en MeetUp](https://www.meetup.com/es-ES/Granada-Geek/events/236840299/).
-
-## Datos
-
-Hemos subido datos difíciles de obtener de otra forma
-al [subdirectorio `datos`](datos/). Todos los datos tienen licencia
-libre y se menciona la forma de obtención en el commit
-correspondiente.
-
-## Recursos adicionales. 
-
-Algunos proyectos parecidos que pueden servir de inspiración o de donde podemos extraer software para usarlo.
-
-* [Smart Citizen](https://smartcitizen.me/) es una placa basada en Arduino, configurable, que detecta niveles de CO2. 
-* [Índice de datos abiertos en el mundo](http://index.okfn.org/dataset/emissions/).
-* [Datos abiertos de calidad del aire en `datos.gob.es`](http://datos.gob.es/es/catalogo?q=aire) y [datos de mortalidad por cáncer de tracto aéreo digestivo](http://datos.gob.es/es/catalogo/a16003011-mortalidad-por-cancer-del-tracto-aereo-digestivo-superior-en-hombres-en-euskadi-1996-20031), pero sólo en Euskadi. 
-* [Datos de ciudades europeas](http://www.airqualitynow.eu/comparing_home.php). Esta es la [situación de Granada](http://www.airqualitynow.eu/city_info/granada/page1.php).
-* [API de datos meteorológicos](https://opendata.aemet.es/centrodedescargas/inicio), para relacionar con los datos de contaminación. Interesante, por ejemplo, las horas de insolación que están relacionadas con el ozono. 
-* [Minuta de un pleno del ayuntamiento, con valores legales y demás](http://transparencia.granada.org/public/Documento.aspx?ID=2891) 
-* [Estimando de forma indirecta la contaminación](http://ieeexplore.ieee.org/ielx5/4906860/4912739/04912847.pdf?tp=&arnumber=4912847&isnumber=4912739) a través de mediciones de tráfico de gente y vehículos y una técnica denominada Land Use Regression.
-
-* [Portal de calidad del aire europeo](https://www.eionet.europa.eu/aqportal/products), de donde saca los datos CALIOPE. Equivalente en España llamado [EPER](http://www.eper-es.es/). Se pueden descargar también [datos de calidad del aire](http://www.eea.europa.eu/data-and-maps/data/airbase-the-european-air-quality-database-8). 
+Subproyecto realizado por [Alex](https://github.com/PhoenixAlx)  
   
-* [Red europea de Calidad del Aire](http://actris.nilu.no/) con datos
-  a nivel europeo, y generación de datos descargables.
+## Comparación gasoil-gasolina  
   
-* [OpenAir, software para análisis de la calidad del aire](http://www.openair-project.org/Downloads/Default.aspx) 
-
-* [Estación de medida de calidad del aire](https://github.com/javacasm/Sensor-calidad-del-aire---Leptos) usando
-  Arduino y poco más. Especialmente interesante el sensor MQ2, que
-  detecta al menos CO. 
+Normativa  
   
-*  [Web de la Junta de Andalucia, control de calidad en la provincia de Granada](http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/feb17/gr170228.htm)
+[Normativa europea sobre emisiones](https://es.wikipedia.org/wiki/Normativa_europea_sobre_emisiones)  
 
-* [Mapas a tiempo real, calidad del aire](http://aqicn.org/map/spain/es/)
+Consumos  
+  
+[Consumo energía final](https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&q=select+col0%2C+col8%2C+col6+from+1aAd0hqZ_G0o7Wy15Jot-Errlo7O4WnJLu36Wpx2E+order+by+col0+asc&viz=GVIZ&t=AREA&rmax=250&uiversion=2&gco_forceIFrame=true&gco_hasLabelsColumn=true&width=500&height=300)  
+  
+[Parque móvil](https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&q=select+col0%2C+col1%2C+col2+from+1_cxeeLyOKDwIAEToLtRzlguqn6Suf9O8DoCrogo8+order+by+col0+asc&viz=GVIZ&t=AREA&rmax=250&uiversion=2&gco_forceIFrame=true&gco_hasLabelsColumn=true&width=500&height=300)
+
+## Estación meteorólgica en Twitter
+
+[Fran Navarro](http://github.com/fnavales) ha creado una [cuenta
+Twitter que envía resultados de sensores en su barrio recolectados con
+un Arduino](https://twitter.com/tempChanaGR).
+
+## Serie en el mes de Febrero
+
+[Víctor Gea](http://github.com/VictorGeaGarcia) ha creado con pandas y
+bokeh
+[una visualización de la contaminación en la estación del Palacio de Congresos en febrero](Contaminacion_Congresos_febrero.html),
+estación cuya foto aparece aquí:
+
+![Estación de calidad del aire](recursos/estacion.jpg)
+
+## Módulo en Perl para *scraping*
+
+[Web::SIVA](http://search.cpan.org/~jmerelo/Web-SIVA-0.0.4/) es un
+módulo en Perl para extraer datos de la web en el formato web que se
+usa a partir de 2004. 
+
+
+
+
