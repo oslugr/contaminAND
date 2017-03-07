@@ -50,7 +50,7 @@ estación cuya foto aparece aquí:
 
 Y la Estación meteorológica de la zona norte:
 
-![Estación meteorológica zona norte](recurso/estacion_meteorologica_Norte.jpg)
+![Estación meteorológica zona norte](recursos/estacion_meteorologica_Norte.jpg)
 
 ## Módulo en Perl para *scraping*
 
