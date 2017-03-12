@@ -2,3 +2,6 @@ requires "Mojolicious", "7.13";
 requires "LWP::Simple";
 requires "File::Slurp::Tiny";
 requires "JSON";
+requires "DateTime"; 
+requires "DateTime::Format::ISO8601";
+requires "DateTime::Format::Strptime";
