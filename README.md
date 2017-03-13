@@ -48,6 +48,10 @@ estación cuya foto aparece aquí:
 
 ![Estación de calidad del aire](recursos/estacion.jpg)
 
+Y la Estación meteorológica de la zona norte:
+
+![Estación meteorológica zona norte](recursos/estacion_meteorologica_Norte.jpg)
+
 ## Módulo en Perl para *scraping*
 
 [Web::SIVA](http://search.cpan.org/~jmerelo/Web-SIVA-0.0.4/) es un
