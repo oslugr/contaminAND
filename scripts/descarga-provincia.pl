@@ -20,15 +20,17 @@ my @meses = qw(ene feb mar abr may jun jul ago sep oct nov dic);
 my $provincia = shift || "gr";
 
 my $current = DateTime->new(
-    day   => 1,
-    month => 1,
-    year  => 1998,
+			    day   => 1,
+			    month => 1,
+			    year  => 1998,
+			    time_zone => "Europe/Madrid"
 );
 
 my $stop = DateTime->new(
-    day   => 3,
-    month => 3,
-    year  => 2017,
+			 day   => 3,
+			 month => 3,
+			 year  => 2017,
+			 time_zone => "Europe/Madrid"
 );
 
 my @datos;
@@ -38,14 +40,15 @@ while ( $current < $stop ) {
   my $mes = $current->strftime('%m');
   my $dia = $current->strftime('%d');
   my $date =  $year.$mes.$dia;
-  #printf "Descargando informacion de ngr%s\n", $date;
+  say "=> $provincia $current";
   
   my $url = "http://www.juntadeandalucia.es/medioambiente/atmosfera/informes_siva/$meses[$mes-1]$year/n$provincia$date.htm";
   
   my $content = get( $url );
   
-  if    ( $content )  {
+  if  ( $content and $content =~ m{$year</title} )  {
     my $dom = Mojo::DOM->new( $content );
+
     my @tables = $dom->find('table')->each;
     
     shift @tables; #Primera tabla con leyenda
@@ -54,15 +57,16 @@ while ( $current < $stop ) {
     
     while ( @tables ) {
       my $metadatos = shift @tables;
-      my $datos = shift @tables;
+      next if !@tables;
+      my $medidas = shift @tables;
       
       my @metadatos = ( $metadatos =~ /<b>.([A-Z][^<]+)/g);
       my $this_metadata = { date => $fecha };
       for my $k (qw(provincia municipio estacion direccion)) {
 	$this_metadata->{$k} = shift @metadatos;
       }
-      
-      my @filas = $datos->find('tr')->each;
+
+      my @filas = $medidas->find('tr')->each;
       
       shift @filas; #Cabecera
       pop @filas;
@@ -71,6 +75,9 @@ while ( $current < $stop ) {
 	my %these_medidas = %{$this_metadata};
 	my $fecha_hora = shift @columnas;
 	my ($hora) = ($fecha_hora =~ /(\d+:\d+)/);
+	if ( !$hora ) {
+	    warn "Problemas con el formato en $f $current";
+	}
 	$these_medidas{'date'} =~ s/00:00/$hora/;
 	for my $c (qw(SO2 PART NO2 CO O3)) {
 	  $these_medidas{$c} = shift @columnas;
