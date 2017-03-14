@@ -92,5 +92,7 @@ ENV/
 *~
 
 # Big files
-scripts/contaminAND-gr*.json
+scripts/contaminAND-gr*.json*.json
+datos/*.json
+analisis/*.json
 

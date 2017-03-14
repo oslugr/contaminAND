@@ -1,34 +1,27 @@
-library(readr)
+library("entropy")
 library("ggplot2")
 library("ggthemes")
-datos.CO<-read_csv("../datos/contaminAND-gr-conjunto.csv", 
-                   col_types = cols(CO.congresos = col_number(), 
-                                    CO.norte = col_number()), na = "NA")
+library("readr")
+library("svglite")
+datos.CO<-read_csv("contaminAND-gr-conjunto.csv", 
+         col_types = cols(date= col_datetime(),CO.congresos = col_number(), 
+                          CO.norte = col_number()), na = "NA")
 number_data.datos.CO<- nrow(datos.CO)
-datos.gradiente.CO <- data.frame(congresos= numeric(0), norte= numeric(0), percert.congresos=numeric(0),percent.norte=numeric(0),original.congresos.ant=numeric(0),original.norte.ant=numeric(0),original.congresos=numeric(0),original.norte=numeric(0))
+datos.CO.filtros<-datos.CO[complete.cases(datos.CO),]
+datos.CO.filtros$date <- NULL 
+number_data.datos.CO.filtros<- nrow(datos.CO.filtros)
+datos.CO.filtros2<- datos.CO.filtros[1:(number_data.datos.CO.filtros-1),]
+datos.CO.filtros3<- datos.CO.filtros[-1,]
+#datos.gradiente.CO <- data.frame(congresos= numeric(0), norte= numeric(0), percert.congresos=numeric(0),percent.norte=numeric(0),original.congresos.ant=numeric(0),original.norte.ant=numeric(0),original.congresos=numeric(0),original.norte=numeric(0))
+datos.gradiente.CO<-data.frame(diff(as.matrix(datos.CO.sinna)),datos.CO.filtros2,datos.CO.filtros3)
+datos.gradiente.CO$percent.congresos<-datos.gradiente.CO$CO.congresos*100/datos.gradiente.CO$CO.congresos.1;
+datos.gradiente.CO$percent.norte<-datos.gradiente.CO$CO.norte*100/datos.gradiente.CO$CO.norte.1;
 
-#for en datos.co para añadir a datos.gradiente.co
-for(i in 2:number_data.datos.CO){ 
-  data.Cong.ant<-datos.CO$CO.congresos[i-1];
-  data.Nort.ant<-datos.CO$CO.norte[i-1];
-  data.Cong<-datos.CO$CO.congresos[i];
-  data.Nort<-datos.CO$CO.norte[i];
-  if (! is.na(data.Cong.ant) && ! is.na(data.Nort.ant) && ! is.na(data.Cong) && ! is.na(data.Nort) ){
-
-    diferencia.Cong<-data.Cong-data.Cong.ant;
-    diferencia.Nort<-data.Nort-data.Nort.ant;
-    
-    diferencia.Cong.percent<-diferencia.Cong*100/data.Cong.ant;
-    diferencia.Nort.percent<-diferencia.Nort*100/data.Nort.ant;
-    nueva_fila<-c(diferencia.Cong,diferencia.Nort,diferencia.Cong.percent,diferencia.Nort.percent,data.Cong.ant,data.Nort.ant,data.Cong,data.Nort )
-    datos.gradiente.CO[nrow(datos.gradiente.CO) + 1, ] <- nueva_fila;
-    print(i)
-  }
-
-} 
 
 #guardamos tabla 
 
 write.csv(datos.gradiente.CO, file = "datos.gradiente.CO.csv")
-ggplot(datos.gradiente.CO,aes(x=percent.norte,y=percert.congresos,color=abs(congresos),size=abs(norte)))+geom_point()+scale_colour_distiller(palette='Spectral')+
+ggplot(datos.gradiente.CO,aes(x=percent.norte,y=percent.congresos,color=abs(CO.congresos),size=abs(CO.norte)))+geom_point()+scale_colour_distiller(palette='Spectral')
 
+ggsave("gradientes.png")
+ggsave("gradientes.svg")
