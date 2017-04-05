@@ -14,7 +14,45 @@ abstract:  "The way to open data to citizens so that they can take their own dec
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Introduction
+# Introduction
+
+The whole point of the open data movement is to keep the
+administration in check so that the citizens can take informed
+decisions about their continuity, but it is also about reusing data
+provided by the administration for their own economic, health or
+political benefit.
+
+The first step of opening data is obtaining data provided by the
+administration via freeing it from proprietary formats or simply
+documents that prevent quantitative or qualitative analysis of the
+data. In this first step, we should believe that the only source of
+errors or *noise* is the extraction process and that data itself is
+clean and should be trusted, since it arrives from qualified sources
+or calibrated sensors.
+
+During the beginning of the month of March 2017, we initiated a
+process that extracted air quality information from pages hosted by
+the regional government, the Junta de Andalucía. After some
+visualization, we realized long sequences of measurements that yielded
+exactly the same number and other changes that did not seem have
+correlation with reality.
+
+This paper in an attempt to present a methodology that would find
+problems in time series of environmental measurements via a series of
+statistical analysis. After a brief presentation of the state of the
+art, we show the results of the initial data exploration we performed,
+followed by the different techniques used to analyze the possibility
+that the data was faulty. Finally, we will present our conclusions.
+
+# State of the art
+
+# Initial data exploration
+
+# Finding faults in environmental time series
+
+## Using entropy
+
+## Using time-wise deltas
 
 
 ## References
