@@ -2,7 +2,6 @@
 title: "Detection of faults in environmental sensor via sequence analysis"
 author: "JJ Merelo +"
 date: "19 de marzo de 2017"
-output: html_document
 output:
   pdf_document:
     keep_tex: true
@@ -45,6 +44,14 @@ followed by the different techniques used to analyze the possibility
 that the data was faulty. Finally, we will present our conclusions.
 
 # State of the art
+
+Surprisingly enough, there is very little literature in this area,
+probably due to the fact that the open data movement is relatively
+recent. Most papers are devoted to finding evidences of fraud in
+financial data [@fanning1998neural,@5522816]. However, we have found no
+published research that tries to find evidence of faulty sensors or
+faulty processing that leads to statistical oddities in the published
+data. 
 
 # Initial data exploration
 
