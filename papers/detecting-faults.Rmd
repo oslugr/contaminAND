@@ -1,5 +1,5 @@
 ---
-title: "Detection of faults in environmental sensor via data sequence analysis"
+title: "Detection of anomalies in environmental sensor data via sequence analysis"
 author: "JJ Merelo +"
 date: "19 de marzo de 2017"
 output:
