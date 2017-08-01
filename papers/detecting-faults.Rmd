@@ -76,8 +76,16 @@ disasters. They use dynamic Bayesian networks to find anomalies in
 windspeed data, finding a high rate of false negatives but concluding
 that the speed of detection of these anomalies is adequate and,
 besides, can use data as it becomes available, being able to scale
-also to large quantities of data. 
+also to large quantities of data. A more recent paper
+[@hill2010anomaly] uses auto-regression to compare data predicted at
+`t+1` with actual data. Besides, this paper states that it is not
+realistic to accurately label all possible anomalous instances, since
+anomalous behavior can arise from different causes; that is why high
+levels of accuracy in classification should not be expected.
 
+In our case, we will use a non-supervised method and we will try to
+establish thresholds that will tell us when some data deviates from
+*normality*. 
 
 
 # Initial data exploration
