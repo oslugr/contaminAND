@@ -51,13 +51,34 @@ that the data was faulty. Finally, we will present our conclusions.
 
 # State of the art
 
-Surprisingly enough, there is very little literature in this area,
-probably due to the fact that the open data movement is relatively
-recent. Most papers are devoted to finding evidences of fraud in
-financial data [@fanning1998neural,@5522816]. However, we have found no
-published research that tries to find evidence of faulty sensors or
-faulty processing that leads to statistical oddities in the published
-data. 
+If we focus on detection of anomalies in open data, the field is
+relatively new and this area has not been explored extensively. In
+general, detecting data points that do not adjust to a *normal*
+pattern is called anomaly or outlier detection. Several survey papers
+[@chandola2009anomaly,@chandola2012anomaly] review the state of the
+and different techniques that can be applied. In our case, data is not
+abnormal by itself, except when missing; it can be considered abnormal
+within the sequence of data: either big changes or no changes are not
+consistent with the nature of what is measured, particle or gas
+concentrations. Since the data is anomalous in the context of the time
+series, this is normally called *contextual* anomaly detection, since
+the consideration of normal or not makes sense only within the
+context.
+
+Even in this particular context, most papers are devoted to finding anomalies in
+financial data [@fanning1998neural,@5522816]. However, some relatively
+recent papers have focused on detection of anomalies in data taken
+from environmental sensors [@hill2007real,@hill2010anomaly]. They
+mention the presence of sensor and transmission errors, but more
+frequently anomalies are actual deviations from historical data such
+as heavy weather events or that caused by environmental
+disasters. They use dynamic Bayesian networks to find anomalies in
+windspeed data, finding a high rate of false negatives but concluding
+that the speed of detection of these anomalies is adequate and,
+besides, can use data as it becomes available, being able to scale
+also to large quantities of data. 
+
+
 
 # Initial data exploration
 
