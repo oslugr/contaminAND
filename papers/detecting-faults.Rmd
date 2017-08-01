@@ -1,12 +1,18 @@
 ---
-title: "Detection of faults in environmental sensor via sequence analysis"
+title: "Detection of faults in environmental sensor via data sequence analysis"
 author: "JJ Merelo +"
 date: "19 de marzo de 2017"
 output:
   pdf_document:
     keep_tex: true
 bibliography: refs.bib
-abstract:  "The way to open data to citizens so that they can take their own decisions as well as create applications and studies based on it goes through ensuring that the data can be trusted. After a hackathon where we studied the environmental sensors in the city of Granada, we found oddities in the data sequences. In this paper we present several methods to study those oddities or possible faults that could eventually be used to invalidate data provided by smart city or other sensors"
+abstract:  "After a hackathon where we studied data gathered from the
+environmental sensors in the city of Granada and other cities in
+Andalucia, we found several oddities in the data sequences, which
+makes us doubt the veracity of published data. In this paper we
+present several methods to study those oddities or possible faults
+that could eventually be used to validate data provided by smart
+city sensors or other kind of data providers." 
 ---
 
 ```{r setup, include=FALSE}
