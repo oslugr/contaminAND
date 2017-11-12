@@ -1,3 +1,7 @@
+# Importante
+
+Este repositorio se ha trasladado a [uno nuevo](https://github.com/JJ/contaminAND). 
+
 # Open Data Day Hackathón - Granada 2017
 
 ![Granada Radioactiva](recursos/granada-radioactiva_reducido.png)
