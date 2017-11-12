@@ -98,3 +98,7 @@ analisis/*.json
 
 *.tex
 *.pdf
+
+**/auto
+#too big
+scripts/contaminAND-gr.json
