@@ -96,3 +96,5 @@ scripts/contaminAND-gr*.json*.json
 datos/*.json
 analisis/*.json
 
+*.tex
+*.pdf
